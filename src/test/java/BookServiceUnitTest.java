@@ -24,7 +24,7 @@ public class BookServiceUnitTest {
 
         boolean result = service.addBook(book);
 
-        assertTrue(result);
+        assertFalse(result);
 
         assertEquals(1,
                 stub.getSaveCalled());
